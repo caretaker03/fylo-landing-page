@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav-mobile {
+    display: none;
+    width: 20%;
+    padding: 1%;
+    border: none;
+    border-radius: 10px;
+    background-color: #07043B;
+    position: absolute;
+    z-index: 1;
+    top: 68px;
+    right: 20px;
+}
+
+.nav-mobile ul li {
+    list-style: none;
+}
+
+.nav-mobile ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Open Sans;
+    margin-bottom: 15%;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+.nav-mobile ul li:hover {
+    background-color: #9B9AB5;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4%;
+    padding: 3%;
+}
+
+nav div {
+    width: 75%;
+}
+
+nav ul {
+    width: 18%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Open Sans;
+}
+
+header {
+    display: flex;
+    padding: 3%;
+}
+
+header .left {
+    width: 50%;
+    padding: 2%;
+}
+
+header .left h1{
+    font-family: Raleway;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 4%;
+    color: hsl(244, 38%, 23%);
+}
+
+header .left p {
+    font-family: Open Sans;
+    margin-bottom: 4%;
+    color: hsl(244, 38%, 23%);
+}
+
+header .left form button, input{
+    font-size: 16px;
+    color: hsl(244, 38%, 23%);
+}
+
+header .left form input {
+    padding: 3%;
+    width: 55%;
+    border: 0.1px solid black;
+    border-radius: 5px;
+}
+
+header .left form button {
+    padding: 3%;
+    width: 34%;
+    border: 1px solid #2F65F9;
+    border-radius: 5px;
+    background-color: #2F65F9;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+header .left form button:hover {
+    background-color: #6B9BFF;
+    border-radius: 1px solid #6B9BFF;
+}
+
+header .right {
+    width: 50%;
+    background-image: url(./images/illustration-1.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    background-color: #F9F8FE;
+}
+
+main .left {
+    width: 50%;
+    padding: 5%;
+
+}
+
+main .right {
+    width: 50%;
+    background-image: url(./images/illustration-2.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main .left h1{
+    font-family: Raleway;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 4%;
+    color: hsl(244, 38%, 23%);
+}
+
+main .left p {
+    font-family: Open Sans;
+    margin-bottom: 4%;
+    color: hsl(244, 38%, 23%);
+}
+
+main .left .link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+main .left .link a {
+    color: #3D8E7F;
+    font-size: 18px;
+    font-family: Open Sans;
+}
+
+main .left .link a:hover {
+    color: #77DECB;
+}
+
+main .left .card {
+    width: 60%;
+    background-color: #FFFFFF;
+    padding: 4%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px #F2F2F6;
+}
+
+main .left .card .account {
+    display: flex;
+    align-items: center;
+}
+
+main .left .card .account img {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+main .left .card .account h4 {
+    font-family: Open Sans;
+    font-weight: bolder;
+    color: hsl(244, 38%, 23%);
+}
+
+main .left .card .account small {
+    font-family: Open Sans;
+    color: hsl(244, 38%, 23%);
+}
+
+section {
+    display: flex;
+    padding: 0;
+    background-color: #575989;
+}
+
+section .left {
+    width: 50%;
+    padding: 5%;
+}
+
+section .left h1{
+    font-family: Raleway;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 4%;
+    color: white;
+}
+
+section .left p {
+    font-family: Open Sans;
+    color: white;
+}
+
+section .right {
+    width: 50%;
+    padding: 5%;
+}
+
+section .right form input {
+    padding: 3%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+section .right button {
+    padding: 3%;
+    width: 34%;
+    border: 1px solid #2F65F9;
+    border-radius: 5px;
+    background-color: #2F65F9;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+section .right button:hover {
+    background-color: #6B9BFF;
+    border-radius: 1px solid #6B9BFF;
+}
+
+footer {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Open Sans;
+    color: white;
+    background-color: #07043B;
+}
+
+footer .left {
+    width: 30%;
+}
+
+footer .center {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .center .l ul li {
+    margin-bottom: 20%;
+}
+
+footer .center .r ul li {
+    margin-bottom: 20%;
+}
+
+footer .center ul {
+    list-style-type: none;
+}
+
+footer .center ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .center ul li a:hover {
+    color: #9B9AB5;
+}
+
+footer .right {
+    width: 30%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+footer .right a {
+    margin-right: 5%;
+}
+
+footer .right a:hover {
+    box-shadow: 1px 1px 120px#9B9AB5;
+}
+
+@media screen and (max-width: 800px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #comp-menu {
+        display: none;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
+
+    #mobile-menu:hover .nav-mobile{
+        display: block;
+        padding: 3%;
+        width: 40%;
+    }
+    #mobile-menu:focus .nav-mobile{
+        display: block;
+        padding: 3%;
+        width: 40%;
+    }
+
+    .nav-mobile li {
+        padding: 3%;
+    }
+
+    .nav-mobile li:hover {
+        background-color: #9B9AB5;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .nav-mobile li a {
+        color: white;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        height: 90vh;
+        margin-bottom: 0;
+    }
+
+    header .left{
+        width: 100%;
+        text-align: center;
+    }
+
+    header .right {
+        width: 100%;
+        height: 100%;
+    }
+
+    header .left form {
+        flex-direction: column;
+    }
+
+    header .left form input {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    header .left form button {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        height: 110vh;
+    }
+
+    main .left{
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    main .left .card {
+        width: 100%;
+        text-align: left;
+    }
+
+    main .right {
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/illustration-2.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    section .right {
+        width: 100%;
+    }
+
+    section .right button {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .left, footer .right, footer .center {
+        width: 100%;
+        margin: 5%;
+        text-align: left;
+    }
+
+    footer .right {
+        text-align: center;
+    }
+}
